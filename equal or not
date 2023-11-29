@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n1,n2;
+  
+  cout<<"Enter any two numbers:"<<endl;
+  cin>>n1>>n2;
+  
+  string max=(n1==n2) ? "equal" : "not equal";
+  
+  cout<<"The entered two numbers are "<<max<<endl;
+}
