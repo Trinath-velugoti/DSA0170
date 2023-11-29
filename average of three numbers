@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main () {
+ int n1,n2,n3;
+cout<<"enter the three number\n:";
+cin>>n1>>n2>>n3;
+ int total=n1+n2+n3;
+  float avg=total/3;
+            cout<<"average of three numbers is"<<avg<<endl;
+           }
