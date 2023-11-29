@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  float n1,n2;
+  float add,substract,multiply,division;
+  
+  cout<<"Enter any two numbers:"<<endl;
+  cin>>n1>>n2;
+  
+  add=n1+n2;
+  substract=n1-n2;
+  multiply=n1*n2;
+  division=n1/n2;
+  
+  cout<<"Addition = "<<add<<endl;
+  cout<<"Substraction = "<<substract<<endl;
+  cout<<"Multiplication = "<<multiply<<endl;
+  cout<<"Division = "<<division<<endl;
+  
+  return 0;
+}
