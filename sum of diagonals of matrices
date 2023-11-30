@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int rows,cols,matrix[rows][cols];
+  cout<<"\nenetr the rows and cols:";
+  cin>>rows>>cols;
+  cout<<"\nenetr the number of elements in the matrix:";
+  for(int i=0;i<rows;i++){
+    for(int j=0;j<cols;j++){
+      cin>>matrix[i][j];
+    }
+  }
+  int maindiagonal=0;
+   for(int i=0;i<rows;i++){
+    for(int j=0;j<cols;j++){
+      if(i==j){
+        maindiagonal+=matrix[i][j];
+      }
+    }
+   }
+  int secondarydiagonal=0;
+  for(int i=0;i<rows;i++){
+    for(int j=0;j<cols;j++){
+      if(i+j==rows-1){
+        secondarydiagonal+=matrix[i][j];
+      }
+    }
+  }
+  cout<<"sum of main diagonal:"<<maindiagonal<<endl;
+  cout<<"sum of secondary diagonal:"<<secondarydiagonal<<endl;
+}
